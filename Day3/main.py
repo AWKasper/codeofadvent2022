@@ -17,7 +17,6 @@ def find_groups():
             if char in lines[i + 1] and char in lines[i + 2] and char not in chars:
                 dups.append(char)
                 chars.append(char)
-    print(len(dups))
     return dups
 
 
