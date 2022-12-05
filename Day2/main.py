@@ -18,11 +18,11 @@ def match_hand():
         return result
 
 
-def calculate_rows(list):
+def calculate_rows(reader):
     score = 0
     points = {"X": 1, "Y": 2, "Z": 3}
 
-    for row in list:
+    for row in reader:
         matchup = (ord(row[1]) - 64) - (ord(row[0]) - 64)
         result = 3 if matchup == 23 else 0
         if result == 0:
